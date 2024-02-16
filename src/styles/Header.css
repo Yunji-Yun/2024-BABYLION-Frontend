@@ -1,0 +1,46 @@
+.Header_Home {
+  font-size: 5.5em;
+  color: #ff7710;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.Header_Home p {
+  margin-top: -30px;
+}
+
+.Header-center {
+  display: flex;
+  justify-content: center;
+}
+
+.Header {
+  font-size: 4em;
+  color: #ff7710;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+.Header-ds {
+  color: white;
+}
+
+.Header_About {
+  font-size: 4em;
+  color: #ff7710;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.Header-about-low {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.Header-arrow {
+  color: white;
+}

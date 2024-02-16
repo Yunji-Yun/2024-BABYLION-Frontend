@@ -1,0 +1,39 @@
+.page {
+  background: linear-gradient(#000000, rgb(34, 33, 30, 0.62));
+  width: 100vw;
+  height: 100vh;
+  min-height: 844px;
+}
+
+.page-bg {
+  height: 100vh;
+  min-height: 844px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (hover: hover) {
+  .page-bg {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.page-space {
+  width: 100vw;
+  height: 100vh;
+  min-height: 844px;
+}
+
+@media (hover: hover) {
+  .page-space {
+    width: 390px;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
