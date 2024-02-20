@@ -1,0 +1,131 @@
+.content {
+    width: 390px;
+}
+.lion_about {
+    display: flex;
+    flex-direction: column;
+}
+
+.lion_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 26px;
+    margin-top: 75px;
+}
+
+.lion_title {
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-bottom: 9.5px;
+}
+
+.lion_intro p {
+    font-weight: bold;
+    font-size: 0.83em;
+}
+
+.part_about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 34px 0;
+    width: 390px;
+}
+
+.des_intro {
+    display: flex;
+    height: 130px;
+    width: 130px;
+    background-color: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.front_intro {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 130px;
+    background-color: #ff7710;
+    border-radius: 20px;
+}
+
+.back_intro {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 130px;
+    width: 130px;
+    background-color: #000000;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.des_title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #000000;
+    margin: 13px;
+    display: flex;
+    height: 104px;
+}
+
+.front_title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.back_title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 13px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    height: 104px;
+}
+
+.des_text {
+    font-weight: bold;
+    font-size: 0.6em;
+    color: #000000;
+    margin-top: 30px;
+    margin-left: 8px;
+    width: 258px;
+    height: 92px;
+    display: none;
+}
+
+.front_text {
+    font-weight: bold;
+    font-size: 0.6em;
+    margin-left: 15px;
+    width: 361px;
+    height: 92px;
+    text-align: center;
+    display: none;
+}
+
+.back_text {
+    font-weight: bold;
+    font-size: 0.6em;
+    width: 260px;
+    height: 92px;
+    margin-top: 30px;
+    text-align: end;
+    display: none;
+}
+
+.des_intro:hover,
+.front_intro:hover,
+.back_intro:hover {
+    width: 390px;
+    position: absolute;
+}
+
+.des_intro:hover .des_text,
+.front_intro:hover .front_text,
+.back_intro:hover .back_text {
+    display: block;
+}
