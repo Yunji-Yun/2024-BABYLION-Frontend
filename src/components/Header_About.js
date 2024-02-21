@@ -7,7 +7,7 @@ function Header_About() {
         <p>GROWL -</p>
         <div className="Header-about-low">
           <p>TO</p>
-          <p className="Header-arrow">&rarr;</p>
+          <p className="Header-arrow">➞</p>
           <p>WORLD</p>
         </div>
       </div>
