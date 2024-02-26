@@ -9,7 +9,12 @@ function Result() {
         <div className="page-space">
           <Header />
           <div className="center">
-            <div className="content">여기에 작업하시면 됩니다.</div>
+            <div className="content">
+              <div className="text-3xl font-bold underline">
+                안녕
+              
+              </div>
+            </div>
           </div>
           <Footer />
         </div>
