@@ -1,47 +1,165 @@
+@font-face {
+    font-family: "GothicA1-Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Bold.woff2")
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
 .page {
-  background: linear-gradient(#000000, rgb(34, 33, 30, 0.62));
-  width: 100vw;
-  height: 100vh;
-  /* min-height: 844px; */
-  overflow-y: scroll;
-  overflow-x: hidden;
+    background: linear-gradient(#000000, rgb(34, 33, 30, 0.62));
+    width: 100vw;
+    height: 100vh;
+    /* min-height: 844px; */
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 @media (hover: hover) {
-  .page {
-    overflow-y: hidden;
-  }
+    .page {
+        overflow-y: hidden;
+    }
 }
 
 .page-bg {
-  height: 100vh;
-  /* min-height: 844px; */
-  display: flex;
-  justify-content: center;
+    height: 100vh;
+    /* min-height: 844px; */
+    display: flex;
+    justify-content: center;
 }
 
 @media (hover: hover) {
-  .page-bg {
-    background-image: url("../img/background.png");
-    background-size: cover;
-    background-position: center;
-  }
+    .page-bg {
+        background-image: url("../img/background.png");
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .page-space {
-  width: 100vw;
-  height: 100vh;
-  min-height: 844px;
+    width: 100vw;
+    height: 100vh;
+    min-height: 844px;
 }
 
 @media (hover: hover) {
-  .page-space {
-    width: 390px;
-  }
+    .page-space {
+        width: 390px;
+    }
 }
 
 .center {
-  display: flex;
-  justify-content: center;
-  color: white;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    font-family: "GothicA1-Bold";
+    font-size: 22px;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    margin-top: 90px;
+    margin-bottom: 55px;
+}
+
+.home-com1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.homeToAbout {
+    background-color: #ff7710;
+    color: #000000;
+    padding: 13px 13px 13px 14px;
+    width: 103px;
+    height: 104px;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.homeToAbout div {
+    height: 22px;
+    margin-bottom: 4px;
+}
+
+.grayBox {
+    background-color: #d9d9d9;
+    width: 130px;
+    height: 130px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.home-com2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.homeToInput {
+    background-color: #981b45;
+    color: #ffffff;
+    padding: 13px 13px 13px 14px;
+    width: 103px;
+    height: 104px;
+}
+
+.homeToInput div {
+    height: 22px;
+    margin-bottom: 4px;
+}
+
+.home-com3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pointBox {
+    background-color: #ffffff;
+    width: 130px;
+    height: 130px;
+    border-radius: 0px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PointImg {
+    width: 62.62px;
+    height: 46.7px;
+}
+
+.homeToInsta {
+    background-color: #ff7710;
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InstaImg {
+    width: 80px;
+    height: 80px;
+}
+
+.blackBox {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 13px;
+    width: 104px;
+    height: 104px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.blackBox div {
+    height: 22px;
+    margin-bottom: 4px;
 }
