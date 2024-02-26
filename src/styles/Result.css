@@ -1,0 +1,12 @@
+a {
+    color: inherit; /* 부모 요소의 색상 상속 */
+    text-decoration: none; /* 텍스트 장식 제거 */
+  }
+  
+  a:hover {
+    cursor: pointer; /* 호버 시 포인터 커서로 변경 */
+  }
+
+  a:visited {
+    color: inherit; /* 방문한 링크의 색상 상속 */
+  }
