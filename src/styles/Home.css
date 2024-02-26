@@ -62,8 +62,7 @@
     font-size: 22px;
     font-weight: bolder;
     letter-spacing: -1px;
-    margin-top: 90px;
-    margin-bottom: 55px;
+    margin-top: 65px;
 }
 
 .home-com1 {
@@ -77,8 +76,8 @@
     background-color: #ff7710;
     color: #000000;
     padding: 13px 13px 13px 14px;
-    width: 103px;
-    height: 104px;
+    width: 130px;
+    height: 130px;
     border-radius: 0px 20px 0px 0px;
 }
 
@@ -104,8 +103,8 @@
     background-color: #981b45;
     color: #ffffff;
     padding: 13px 13px 13px 14px;
-    width: 103px;
-    height: 104px;
+    width: 130px;
+    height: 130px;
 }
 
 .homeToInput div {
@@ -154,8 +153,8 @@
     background-color: #000000;
     color: #ffffff;
     padding: 13px;
-    width: 104px;
-    height: 104px;
+    width: 130px;
+    height: 130px;
     border-radius: 20px 0px 0px 20px;
 }
 
