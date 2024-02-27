@@ -10,20 +10,43 @@ function Input() {
     const [email, setEmail] = useState("");
 
     const handleClick = () => {
-        if (!name.trim()) {
+        if (!name.trim() && !number.trim() && !email.trim()) {
+            window.alert("이름, 전화번호, 이메일을 입력해주세요.");
+            return;
+        } else if (!name.trim() && !number.trim() && email.trim()) {
+            window.alert("이름, 전화번호를 입력해주세요.");
+            return;
+        } else if (!name.trim() && number.trim() && !email.trim()) {
+            window.alert("이름, 이메일을 입력해주세요.");
+            return;
+        } else if (!name.trim() && number.trim() && email.trim()) {
             window.alert("이름을 입력해주세요.");
             return;
-        }
-        if (!number.trim()) {
-            window.alert("휴대폰 번호를 입력해주세요.");
+        } else if (name.trim() && !number.trim() && !email.trim()) {
+            window.alert("전화번호, 이메일을 입력해주세요.");
             return;
-        }
-        if (!email.trim()) {
+        } else if (name.trim() && !number.trim() && email.trim()) {
+            window.alert("전화번호를 입력해주세요.");
+            return;
+        } else if (name.trim() && number.trim() && !email.trim()) {
             window.alert("이메일을 입력해주세요.");
             return;
         }
-        // 필요한 모든 정보가 입력되었을 때 다음 페이지로 이동
-        window.location.href = "/result"; // 다음 페이지로 이동하는 코드
+
+        // 데이터베이스에서 정보 가져오기
+        axios
+            .get(
+                `your_database_endpoint?name=${name}&number=${number}&email=${email}`
+            )
+            .then((response) => {
+                // 데이터를 찾았을 경우 다음 페이지로 이동
+                window.location.href = "/result"; // 다음 페이지로 이동하는 코드
+            })
+            .catch((error) => {
+                // 데이터를 찾을 수 없을 경우 알림 표시
+                setDataNotFound(true);
+                window.alert("일치하지 않습니다. 다시 입력해주세요.");
+            });
     };
 
     return (
