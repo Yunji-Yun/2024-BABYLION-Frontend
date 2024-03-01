@@ -2,8 +2,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/Input.css";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Point from "../img/input_point.png";
+import axios from "axios";
 
 function Input() {
     const [name, setName] = useState("");
@@ -35,25 +36,30 @@ function Input() {
         }
 
         // 데이터베이스에서 정보 가져오기
-        {
-            /*
+
         axios
-            .get(
-                `your_database_endpoint?name=${name}&number=${number}&email=${email}`
-            )
+            .post("https://13.124.148.244/api/babylion/check", {
+                name: name,
+                phone: number,
+                email: email,
+            })
             .then((response) => {
-                // 데이터를 찾았을 경우 다음 페이지로 이동
-                window.location.href = "/result"; // 다음 페이지로 이동하는 코드
+                // POST 요청을 성공적으로 보냈다면 다음 작업을 수행할 수 있습니다.
+                // 이 예제에서는 단순히 다음 페이지로 이동하는 코드를 포함하였습니다.
+                const passInfo = response.data.pass;
+
+                window.location.href = `/result?pass=${encodeURIComponent(
+                    passInfo
+                )}`; // 결과 페이지로 이동하는 코드
             })
             .catch((error) => {
-                // 데이터를 찾을 수 없을 경우 알림 표시
-                
-                window.alert("일치하지 않습니다. 다시 입력해주세요.");
-                return;
-            });*/
-        }
+                // POST 요청에 실패했을 때 실행되는 코드
+                console.error("POST 요청 실패:", error);
+                window.alert(
+                    "정보를 전송하는 동안 오류가 발생했습니다. 다시 시도해주세요."
+                );
+            });
     };
-
     return (
         <div className="page">
             <div className="page-bg">
