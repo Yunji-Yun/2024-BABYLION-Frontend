@@ -6,9 +6,22 @@ import { useLocation } from "react-router-dom";
 
 // 합격 컴포넌트
 function PassComponent() {
+    const location = useLocation();
+    const [name, setName] = useState("");
+
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+
+        const paramsName = searchParams.get("name");
+
+        if (paramsName) {
+            setName(paramsName);
+        }
+    }, [location]);
+    console.log(name);
     return (
         <div className=" text-center pt-8 text-black text-[30px] font-bold font-['Inter'] leading-10">
-            축하합니다 !
+            {name}님 축하합니다 !
             <div className="text-[16px] mt-8">
                 <div className="text-[#FF7710] mb-5 text-base font-bold font-['Inter'] leading-tight">
                     덕성여자대학교 멋쟁이사자처럼 12기에
@@ -58,8 +71,22 @@ function PassComponent() {
 
 // 불합격 컴포넌트
 function FailComponent() {
+    const location = useLocation();
+    const [name, setName] = useState("");
+
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+
+        const paramsName = searchParams.get("name");
+
+        if (paramsName) {
+            setName(paramsName);
+        }
+    }, [location]);
     return (
         <div className="py-4 text-center text-black text-[26px] font-bold font-['Inter'] leading-tight">
+            {name}님
+            <br />
             덕성여자대학교
             <br />
             멋쟁이사자처럼 12기에
@@ -107,13 +134,18 @@ function Result() {
     const [isPassed, setIsPassed] = useState(null);
     const location = useLocation();
     const [pass, setPass] = useState("");
+    const [name, setName] = useState("");
 
     useEffect(() => {
         const searchParams = new URLSearchParams(location.search);
         const paramsPass = searchParams.get("pass");
+        const paramsName = searchParams.get("name");
 
         if (paramsPass) {
             setPass(paramsPass);
+        }
+        if (paramsName) {
+            setName(paramsName);
         }
     }, [location]);
 

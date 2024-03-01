@@ -50,7 +50,8 @@ function Input() {
 
                 window.location.href = `/result?pass=${encodeURIComponent(
                     passInfo
-                )}`; // 결과 페이지로 이동하는 코드
+                )}&name=${encodeURIComponent(name)}`;
+                // 결과 페이지로 이동하는 코드
             })
             .catch((error) => {
                 // POST 요청에 실패했을 때 실행되는 코드
