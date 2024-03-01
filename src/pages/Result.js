@@ -117,11 +117,14 @@ function Result() {
         }
     }, [location]);
 
+    console.log(typeof pass);
+    console.log(pass);
     useEffect(() => {
         // 가상의 백엔드 요청 시뮬레이션
-        const randomResult = { pass }; // true로 설정 : 합격페이지 로드, false로 설정 : 불합격페이지 로드
-        setIsPassed(randomResult);
-    }, []);
+        setIsPassed(pass === "true");
+
+        // pass가 "true"일 때 합격 페이지를 보여주고, 그 외에는 불합격 페이지를 보여줌
+    }, [pass]);
 
     return (
         <div className="page">
