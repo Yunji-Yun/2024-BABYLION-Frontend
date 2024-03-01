@@ -119,7 +119,7 @@ function Result() {
 
     useEffect(() => {
         // 가상의 백엔드 요청 시뮬레이션
-        const randomResult = pass; // true로 설정 : 합격페이지 로드, false로 설정 : 불합격페이지 로드
+        const randomResult = { pass }; // true로 설정 : 합격페이지 로드, false로 설정 : 불합격페이지 로드
         setIsPassed(randomResult);
     }, []);
 

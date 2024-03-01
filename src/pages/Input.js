@@ -39,9 +39,9 @@ function Input() {
 
         axios
             .post("https://13.124.148.244/api/babylion/check", {
-                name: name,
-                phone: number,
-                email: email,
+                name: { name },
+                phone: { number },
+                email: { email },
             })
             .then((response) => {
                 // POST 요청을 성공적으로 보냈다면 다음 작업을 수행할 수 있습니다.
