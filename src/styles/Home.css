@@ -16,9 +16,9 @@
 }
 
 @media (hover: hover) {
-    .page {
+    /* .page {
         overflow-y: hidden;
-    }
+    } */
 }
 
 .page-bg {
