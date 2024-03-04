@@ -57,12 +57,17 @@
 .content {
     display: flex;
     flex-direction: column;
-    width: 390px;
     font-family: "GothicA1-Bold";
-    font-size: 22px;
+    font-size: 1.3em;
     font-weight: bolder;
-    letter-spacing: -1px;
+    letter-spacing: -0.015em;
     margin-top: 65px;
+}
+
+@media (hover: hover) {
+    .content {
+        width: 390px;
+    }
 }
 
 .home-com1 {
@@ -76,8 +81,8 @@
     background-color: #ff7710;
     color: #000000;
     padding: 13px 13px 13px 14px;
-    width: 130px;
-    height: 130px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     border-radius: 0px 20px 0px 0px;
 }
 
@@ -88,8 +93,8 @@
 
 .grayBox {
     background-color: #d9d9d9;
-    width: 130px;
-    height: 130px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -103,8 +108,8 @@
     background-color: #981b45;
     color: #ffffff;
     padding: 13px 13px 13px 14px;
-    width: 130px;
-    height: 130px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
 }
 
 .homeToInput div {
@@ -121,8 +126,8 @@
 
 .pointBox {
     background-color: #ffffff;
-    width: 130px;
-    height: 130px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     border-radius: 0px 0px 20px 0px;
     display: flex;
     align-items: center;
@@ -130,14 +135,14 @@
 }
 
 .PointImg {
-    width: 62.62px;
-    height: 46.7px;
+    width: 55%;
+    height: 40%;
 }
 
 .homeToInsta {
     background-color: #ff7710;
-    width: 130px;
-    height: 130px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -145,20 +150,32 @@
 }
 
 .InstaImg {
-    width: 80px;
-    height: 80px;
+    width: 65%;
+    height: 65%;
 }
 
 .blackBox {
     background-color: #000000;
     color: #ffffff;
     padding: 13px;
-    width: 130px;
-    height: 130px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     border-radius: 20px 0px 0px 20px;
 }
 
 .blackBox div {
     height: 22px;
     margin-bottom: 4px;
+}
+
+@media (hover: hover) {
+    .homeToAbout,
+    .homeToInput,
+    .grayBox,
+    .homeToInsta,
+    .pointBox,
+    .blackBox {
+        width: 130px;
+        height: 130px;
+    }
 }

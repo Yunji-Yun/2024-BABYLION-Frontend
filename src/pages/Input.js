@@ -82,7 +82,6 @@ function Input() {
                                                 placeholder="김덕성"
                                                 style={{
                                                     width: "104px",
-                                                    color: "#A5A2A2",
                                                     border: "none",
                                                     backgroundColor:
                                                         " transparent",
@@ -122,7 +121,6 @@ function Input() {
                                             placeholder="01012341234"
                                             style={{
                                                 width: "219px",
-                                                color: "#A5A2A2",
                                                 border: "none",
                                                 backgroundColor: " transparent",
                                             }}
@@ -143,7 +141,6 @@ function Input() {
                                             placeholder="1234@gmail.com"
                                             style={{
                                                 width: "196px",
-                                                color: "#A5A2A2",
                                                 border: "none",
                                                 backgroundColor: " transparent",
                                             }}

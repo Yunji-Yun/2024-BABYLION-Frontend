@@ -28,9 +28,9 @@ function Home() {
                                 </Link>
                             </div>
                             <div className="home-com3">
-                                <div className="pointBox">
+                                <Link to="/input" className="pointBox">
                                     <img src={Point} className="PointImg"></img>
-                                </div>
+                                </Link>
                                 <Link
                                     to="https://www.instagram.com/likelion_ds?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                                     className="homeToInsta"
