@@ -138,11 +138,11 @@ function Result() {
                                     <div className="text-center text-[20px] font-bold mt-4">
                                         {isPassed ? (
                                             <PassComponent
-                                                location={location}
+                                                location={passInfo}
                                             />
                                         ) : (
                                             <FailComponent
-                                                location={location}
+                                                location={passInfo}
                                             />
                                         )}
                                     </div>
