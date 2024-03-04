@@ -90,7 +90,7 @@ function FailComponent({ name }) {
                     <br />
                     간절히 바랍니다.
                 </div>
-                <div className="text-[#000000] mb-9 text-base font-bold font-['Inter'] leading-tight">
+                <div className="text-[#000000] mb-7 text-base font-bold font-['Inter'] leading-tight">
                     아울러 지원 과정에서 작성해주신
                     <br />
                     개인정보는 모두 폐기할 것을 약속드리며,
