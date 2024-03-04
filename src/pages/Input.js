@@ -2,11 +2,13 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/Input.css";
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Point from "../img/input_point.png";
 import axios from "axios";
 
 function Input() {
+    const navigate = useNavigate(); // useHistory 대신 useNavigate를 사용합니다.
+
     const [name, setName] = useState("");
     const [number, setNumber] = useState("");
     const [email, setEmail] = useState("");
@@ -47,10 +49,8 @@ function Input() {
                 // POST 요청을 성공적으로 보냈다면 다음 작업을 수행할 수 있습니다.
                 // 이 예제에서는 단순히 다음 페이지로 이동하는 코드를 포함하였습니다.
                 const passInfo = response.data.pass;
+                navigate(`/result`);
 
-                window.location.href = `/result?pass=${encodeURIComponent(
-                    passInfo
-                )}&name=${encodeURIComponent(name)}`;
                 // 결과 페이지로 이동하는 코드
             })
             .catch((error) => {
