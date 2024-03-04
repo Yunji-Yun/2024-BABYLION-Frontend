@@ -11,6 +11,7 @@
     background-color: #ff7710;
     margin-top: 130px;
     padding: 14px 14px 14px 12px;
+    color: #000000;
 }
 input {
     width: 130px;
@@ -21,7 +22,7 @@ input {
 .nextpage {
     width: 130px;
     height: 260px;
-    border-radius: 20px 0px 20px 0px;
+    border-radius: 20px 0px 0px 20px;
     background-color: #981b45;
     color: white;
     padding: 14px 12px 14px 14px;

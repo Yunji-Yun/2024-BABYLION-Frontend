@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import "../styles/Home.css";
 import Point from "../img/home_point.png";
 import InstaImg from "../img/instagram.png";
+import Cursor from "../img/home_cursor.png";
 
 function Home() {
     return (
@@ -18,6 +19,10 @@ function Home() {
                                     <div>LIKELION</div>
                                     <div>UNIV</div>
                                     <div>12TH</div>
+                                    <img
+                                        src={Cursor}
+                                        className="CursorImg"
+                                    ></img>
                                 </Link>
                                 <div className="grayBox"></div>
                             </div>
