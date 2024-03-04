@@ -49,7 +49,7 @@ function Input() {
                 // POST 요청을 성공적으로 보냈다면 다음 작업을 수행할 수 있습니다.
                 // 이 예제에서는 단순히 다음 페이지로 이동하는 코드를 포함하였습니다.
                 const passInfo = response.data.pass;
-                navigate(`/result`);
+                navigate("/result", { state: { pass: passInfo, name: name } });
 
                 // 결과 페이지로 이동하는 코드
             })
