@@ -5,10 +5,9 @@ import "../styles/Result.css";
 import { useLocation } from "react-router-dom";
 
 // 합격 컴포넌트
-function PassComponent({ location }) {
-    const name = location.state.name;
+function PassComponent({ name }) {
     return (
-        <div className=" text-center pt-8 text-black text-[30px] font-bold font-['Inter'] leading-10">
+        <div className="text-center pt-8 text-black text-[30px] font-bold font-['Inter'] leading-10">
             {name}님 축하합니다 !
             <div className="text-[16px] mt-8">
                 <div className="text-[#FF7710] mb-5 text-base font-bold font-['Inter'] leading-tight">
@@ -58,9 +57,7 @@ function PassComponent({ location }) {
 }
 
 // 불합격 컴포넌트
-function FailComponent({ location }) {
-    const name = location.state.name;
-
+function FailComponent({ name }) {
     return (
         <div className="py-4 text-center text-black text-[26px] font-bold font-['Inter'] leading-tight">
             {name}님
@@ -110,16 +107,22 @@ function FailComponent({ location }) {
 
 function Result() {
     const [isPassed, setIsPassed] = useState(null);
+    const [name, setName] = useState("");
 
     const location = useLocation();
     const passInfo = location.state.pass;
-
+    console.log(passInfo);
     useEffect(() => {
         // 가상의 백엔드 요청 시뮬레이션
-        setIsPassed(passInfo === "true");
 
+        setName(location.state.name);
         // pass가 "true"일 때 합격 페이지를 보여주고, 그 외에는 불합격 페이지를 보여줌
-    }, [passInfo]);
+        if (passInfo == true) {
+            setIsPassed(true);
+        } else if (passInfo == false) {
+            setIsPassed(false);
+        }
+    }, [passInfo, location.state.name]);
 
     return (
         <div className="page">
@@ -137,13 +140,9 @@ function Result() {
                                 {isPassed !== null && (
                                     <div className="text-center text-[20px] font-bold mt-4">
                                         {isPassed ? (
-                                            <PassComponent
-                                                location={passInfo}
-                                            />
+                                            <PassComponent name={name} />
                                         ) : (
-                                            <FailComponent
-                                                location={passInfo}
-                                            />
+                                            <FailComponent name={name} />
                                         )}
                                     </div>
                                 )}
