@@ -5,20 +5,8 @@ import "../styles/Result.css";
 import { useLocation } from "react-router-dom";
 
 // 합격 컴포넌트
-function PassComponent() {
-    const location = useLocation();
-    const [name, setName] = useState("");
-
-    useEffect(() => {
-        const searchParams = new URLSearchParams(location.search);
-
-        const paramsName = searchParams.get("name");
-
-        if (paramsName) {
-            setName(paramsName);
-        }
-    }, [location]);
-    console.log(name);
+function PassComponent({ location }) {
+    const name = location.state.name;
     return (
         <div className=" text-center pt-8 text-black text-[30px] font-bold font-['Inter'] leading-10">
             {name}님 축하합니다 !
@@ -70,19 +58,9 @@ function PassComponent() {
 }
 
 // 불합격 컴포넌트
-function FailComponent() {
-    const location = useLocation();
-    const [name, setName] = useState("");
+function FailComponent({ location }) {
+    const name = location.state.name;
 
-    useEffect(() => {
-        const searchParams = new URLSearchParams(location.search);
-
-        const paramsName = searchParams.get("name");
-
-        if (paramsName) {
-            setName(paramsName);
-        }
-    }, [location]);
     return (
         <div className="py-4 text-center text-black text-[26px] font-bold font-['Inter'] leading-tight">
             {name}님
@@ -132,31 +110,16 @@ function FailComponent() {
 
 function Result() {
     const [isPassed, setIsPassed] = useState(null);
+
     const location = useLocation();
-    const [pass, setPass] = useState("");
-    const [name, setName] = useState("");
+    const passInfo = location.state.pass;
 
-    useEffect(() => {
-        const searchParams = new URLSearchParams(location.search);
-        const paramsPass = searchParams.get("pass");
-        const paramsName = searchParams.get("name");
-
-        if (paramsPass) {
-            setPass(paramsPass);
-        }
-        if (paramsName) {
-            setName(paramsName);
-        }
-    }, [location]);
-
-    console.log(typeof pass);
-    console.log(pass);
     useEffect(() => {
         // 가상의 백엔드 요청 시뮬레이션
-        setIsPassed(pass === "true");
+        setIsPassed(passInfo === "true");
 
         // pass가 "true"일 때 합격 페이지를 보여주고, 그 외에는 불합격 페이지를 보여줌
-    }, [pass]);
+    }, [passInfo]);
 
     return (
         <div className="page">
@@ -174,9 +137,13 @@ function Result() {
                                 {isPassed !== null && (
                                     <div className="text-center text-[20px] font-bold mt-4">
                                         {isPassed ? (
-                                            <PassComponent />
+                                            <PassComponent
+                                                location={location}
+                                            />
                                         ) : (
-                                            <FailComponent />
+                                            <FailComponent
+                                                location={location}
+                                            />
                                         )}
                                     </div>
                                 )}
