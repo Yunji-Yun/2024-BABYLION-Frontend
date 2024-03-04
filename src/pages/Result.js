@@ -60,8 +60,7 @@ function PassComponent({ name }) {
 function FailComponent({ name }) {
     return (
         <div className="py-4 text-center text-black text-[26px] font-bold font-['Inter'] leading-tight">
-            {name}님
-            <br />
+            <p className="text-[20px] font-bold mb-1">{name}님</p>
             덕성여자대학교
             <br />
             멋쟁이사자처럼 12기에
