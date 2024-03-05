@@ -7,9 +7,9 @@ import { useLocation } from "react-router-dom";
 // 합격 컴포넌트
 function PassComponent({ name }) {
     return (
-        <div className="text-center pt-8 text-black text-[30px] font-bold font-['Inter'] leading-10">
-            {name}님 축하합니다 !
-            <div className="text-[16px] mt-8">
+        <div className="text-center pt-5 text-black text-[30px] font-bold font-['Inter'] leading-10">
+            {name}님 <br/>축하합니다 !
+            <div className="text-[16px] mt-6">
                 <div className="text-[#FF7710] mb-5 text-base font-bold font-['Inter'] leading-tight">
                     덕성여자대학교 멋쟁이사자처럼 12기에
                     <br />
@@ -59,8 +59,8 @@ function PassComponent({ name }) {
 // 불합격 컴포넌트
 function FailComponent({ name }) {
     return (
-        <div className="py-4 text-center text-black text-[26px] font-bold font-['Inter'] leading-tight">
-            <p className="text-[20px] font-bold mb-1">{name}님</p>
+        <div className="py-4 text-center text-black text-[20px] font-bold font-['Inter'] leading-tight">
+            <p className="text-[20px] font-bold">{name}님</p>
             덕성여자대학교
             <br />
             멋쟁이사자처럼 12기에
@@ -89,7 +89,7 @@ function FailComponent({ name }) {
                     <br />
                     간절히 바랍니다.
                 </div>
-                <div className="text-[#000000] mb-5 text-base font-bold font-['Inter'] leading-tight">
+                <div className="text-[#000000] mb-8 text-base font-bold font-['Inter'] leading-tight">
                     아울러 지원 과정에서 작성해주신
                     <br />
                     개인정보는 모두 폐기할 것을 약속드리며,
