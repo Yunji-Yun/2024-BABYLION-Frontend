@@ -10,16 +10,18 @@ function Header_About() {
   };
 
   return (
-    <div className="Header-center">
-      <div className="Header_About">
-        <div className="Header-back">
-          <img src={back} alt="뒤로가기" onClick={handleBack} />
-        </div>
-        <p>GROWL -</p>
-        <div className="Header-about-low">
-          <p>TO</p>
-          <p className="Header-arrow">➞</p>
-          <p>WORLD</p>
+    <div className="Header-header">
+      <div className="Header-back">
+        <img src={back} alt="뒤로가기" onClick={handleBack} />
+      </div>
+      <div className="Header-center">
+        <div className="Header_About">
+          <p>GROWL -</p>
+          <div className="Header-about-low">
+            <p>TO</p>
+            <p className="Header-arrow">➞</p>
+            <p>WORLD</p>
+          </div>
         </div>
       </div>
     </div>
