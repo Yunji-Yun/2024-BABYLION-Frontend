@@ -1,48 +1,63 @@
 .Header_Home {
-    font-size: 95px;
-    color: #ff7710;
-    font-weight: bold;
-    margin-top: 50px;
-    letter-spacing: -3px;
+  font-size: 95px;
+  color: #ff7710;
+  font-weight: bold;
+  margin-top: 50px;
+  letter-spacing: -3px;
 }
 
 .Header_Home p {
-    margin-top: -60px;
-    overflow-x: hidden;
+  margin-top: -60px;
+  overflow-x: hidden;
 }
 
 .Header-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .Header {
-    font-size: 4em;
-    color: #ff7710;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin-top: 7px;
+  font-size: 4em;
+  color: #ff7710;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
 }
 
 .Header-ds {
-    color: white;
+  color: white;
+}
+
+.Header-back {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.Header-back img {
+  height: 31px;
+}
+
+.Header-header {
+  margin-top: 13px;
 }
 
 .Header_About {
-    font-size: 4em;
-    color: #ff7710;
-    font-weight: bold;
-    margin-top: 7px;
+  font-size: 4em;
+  color: #ff7710;
+  font-weight: bold;
+  margin-top: 13px;
 }
 
 .Header-about-low {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
 }
 
 .Header-arrow {
-    color: white;
+  color: white;
 }

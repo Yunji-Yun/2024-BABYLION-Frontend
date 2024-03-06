@@ -1,191 +1,191 @@
 @font-face {
-    font-family: "GothicA1-Bold";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Bold.woff2")
-        format("woff2");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "GothicA1-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 .page {
-    background: linear-gradient(#000000, rgb(34, 33, 30, 0.62));
-    width: 100vw;
-    height: 100vh;
-    /* min-height: 844px; */
-    overflow-y: scroll;
-    overflow-x: hidden;
+  background: linear-gradient(#000000, rgb(34, 33, 30, 0.62));
+  width: 100vw;
+  height: 100vh;
+  /* min-height: 844px; */
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 @media (hover: hover) {
-    /* .page {
+  /* .page {
         overflow-y: hidden;
     } */
 }
 
 .page-bg {
-    height: 100vh;
-    /* min-height: 844px; */
-    display: flex;
-    justify-content: center;
+  height: 100vh;
+  /* min-height: 844px; */
+  display: flex;
+  justify-content: center;
 }
 
 @media (hover: hover) {
-    .page-bg {
-        background-image: url("../img/background.png");
-        background-size: cover;
-        background-position: center;
-    }
+  .page-bg {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+  }
 }
 
 .page-space {
-    width: 100vw;
-    height: 100vh;
-    min-height: 844px;
+  width: 100vw;
+  height: 100vh;
+  min-height: 844px;
 }
 
 @media (hover: hover) {
-    .page-space {
-        width: 390px;
-    }
+  .page-space {
+    width: 390px;
+  }
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    color: white;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    font-family: "GothicA1-Bold";
-    font-size: 1.4em;
-    font-weight: bolder;
-    letter-spacing: -0.08em;
-    margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  font-family: "GothicA1-Bold";
+  font-size: 1.4em;
+  font-weight: bolder;
+  letter-spacing: -0.08em;
+  margin-top: 65px;
 }
 
 @media (hover: hover) {
-    .content {
-        width: 390px;
-    }
+  .content {
+    width: 390px;
+  }
 }
 
 .home-com1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .homeToAbout {
-    background-color: #ff7710;
-    padding: 13px 13px 13px 14px;
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
-    border-radius: 0px 20px 0px 0px;
-    position: relative;
+  background-color: #ff7710;
+  padding: 13px 13px 13px 14px;
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  border-radius: 0px 20px 0px 0px;
+  position: relative;
 }
 
 .homeToAbout div {
-    height: 22px;
-    margin-bottom: 6px;
-    color: #000000;
-    font-weight: bolder;
+  height: 22px;
+  margin-bottom: 6px;
+  color: #000000;
+  font-weight: bolder;
 }
 
 .CursorImg {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    bottom: 13px;
-    right: 13px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
 }
 
 .grayBox {
-    background-color: #d9d9d9;
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
-    border-radius: 20px 0px 0px 20px;
+  background-color: #d9d9d9;
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  border-radius: 20px 0px 0px 20px;
 }
 
 .home-com2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .homeToInput {
-    background-color: #981b45;
-    color: #ffffff;
-    padding: 13px 13px 13px 14px;
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
+  background-color: #981b45;
+  color: #ffffff;
+  padding: 13px 13px 13px 14px;
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
 }
 
 .homeToInput div {
-    height: 22px;
-    margin-bottom: 6px;
+  height: 22px;
+  margin-bottom: 6px;
 }
 
 .home-com3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .pointBox {
-    background-color: #ffffff;
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
-    border-radius: 0px 0px 20px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #ffffff;
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  border-radius: 0px 0px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .PointImg {
-    width: 55%;
-    height: 40%;
+  width: 55%;
+  height: 40%;
 }
 
 .homeToInsta {
-    background-color: #ff7710;
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #ff7710;
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .InstaImg {
-    width: 65%;
-    height: 65%;
+  width: 65%;
+  height: 65%;
 }
 
 .blackBox {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 13px;
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
-    border-radius: 20px 0px 0px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 13px;
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  border-radius: 20px 0px 0px 20px;
 }
 
 .blackBox div {
-    height: 22px;
-    margin-bottom: 6px;
+  height: 22px;
+  margin-bottom: 6px;
 }
 
 @media (hover: hover) {
-    .homeToAbout,
-    .homeToInput,
-    .grayBox,
-    .homeToInsta,
-    .pointBox,
-    .blackBox {
-        width: 130px;
-        height: 130px;
-    }
+  .homeToAbout,
+  .homeToInput,
+  .grayBox,
+  .homeToInsta,
+  .pointBox,
+  .blackBox {
+    width: 130px;
+    height: 130px;
+  }
 }
