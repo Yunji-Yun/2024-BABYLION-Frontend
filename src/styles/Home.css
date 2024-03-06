@@ -54,7 +54,7 @@
   color: white;
 }
 
-.content {
+.home-content {
   display: flex;
   flex-direction: column;
   font-family: "GothicA1-Bold";
@@ -62,6 +62,21 @@
   font-weight: bolder;
   letter-spacing: -0.08em;
   margin-top: 65px;
+}
+
+@media (hover: hover) {
+  .home-content {
+    width: 390px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  /* font-weight: bolder;
+  letter-spacing: -0.08em; */
+  margin-top: 20px;
 }
 
 @media (hover: hover) {

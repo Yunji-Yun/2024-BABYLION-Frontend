@@ -1,59 +1,59 @@
 .nameAndnextpage {
-    display: flex;
-    flex-direction: "row";
-    justify-content: space-between;
-    margin-top: 80px;
+  display: flex;
+  flex-direction: "row";
+  justify-content: space-between;
+  margin-top: 40px;
 }
 .name {
-    width: 130px;
-    height: 130px;
-    border-radius: 0px 20px 0px 0px;
-    background-color: #ff7710;
-    margin-top: 130px;
-    padding: 14px 14px 14px 12px;
-    color: #000000;
+  width: 130px;
+  height: 130px;
+  border-radius: 0px 20px 0px 0px;
+  background-color: #ff7710;
+  margin-top: 130px;
+  padding: 14px 14px 14px 12px;
+  color: #000000;
 }
 input {
-    width: 130px;
-    border: none;
-    outline: none;
+  width: 130px;
+  border: none;
+  outline: none;
 }
 
 .nextpage {
-    width: 130px;
-    height: 260px;
-    border-radius: 20px 0px 0px 20px;
-    background-color: #981b45;
-    color: white;
-    padding: 14px 12px 14px 14px;
-    cursor: pointer;
+  width: 130px;
+  height: 260px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #981b45;
+  color: white;
+  padding: 14px 12px 14px 14px;
+  cursor: pointer;
 }
 .phonenumber {
-    width: 260px;
-    height: 129px;
-    border-radius: 0px 20px 0px 0px;
-    background-color: white;
-    color: black;
-    padding: 12px 25px 13px 16px;
+  width: 260px;
+  height: 129px;
+  border-radius: 0px 20px 0px 0px;
+  background-color: white;
+  color: black;
+  padding: 12px 25px 13px 16px;
 }
 .email {
-    width: 260px;
-    height: 130px;
-    border-radius: 0px 0px 0px 20px;
-    background-color: black;
-    color: white;
-    margin-left: 130px;
-    padding: 13px 0px 11px 13px;
+  width: 260px;
+  height: 130px;
+  border-radius: 0px 0px 0px 20px;
+  background-color: black;
+  color: white;
+  margin-left: 130px;
+  padding: 13px 0px 11px 13px;
 }
 .inboxmargin {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .inboxmargintonextpage {
-    height: 210px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
