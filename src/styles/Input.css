@@ -150,7 +150,7 @@ input {
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .home-content {
     font-size: 1.4em;
   }
