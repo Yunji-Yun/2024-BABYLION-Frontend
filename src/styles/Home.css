@@ -15,7 +15,7 @@
 }
 
 .page-bg {
-  /* height: 100vh; */
+  min-height: 100vh;
   /* min-height: 844px; */
   display: flex;
   white-space: nowrap;
@@ -34,7 +34,7 @@
 .page-space {
   width: 100vw;
   /* height: 100vh; */
-  /* min-height: 844px; */
+  min-height: 844px;
 }
 
 @media (hover: hover) {
