@@ -57,6 +57,7 @@
   font-weight: bolder;
   letter-spacing: -0.08em;
   margin-top: 65px;
+  width: 100vw;
 }
 
 @media (hover: hover) {
