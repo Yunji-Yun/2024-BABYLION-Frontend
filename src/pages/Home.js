@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header_Home from "../components/Header_Home";
 import Footer from "../components/Footer";
@@ -8,16 +7,6 @@ import InstaImg from "../img/instagram.png";
 import Cursor from "../img/home_cursor.png";
 
 function Home() {
-  useEffect(() => {
-    if (window.matchMedia("(hover: none)").matches) {
-      // 터치 디바이스에서는 :hover 스타일을 제거하기 위해 hover 클래스 추가
-      const elements = document.querySelectorAll(".hover");
-      elements.forEach((element) => {
-        element.classList.remove("hover");
-      });
-    }
-  }, []);
-
   return (
     <div className="page">
       <div className="page-bg">
