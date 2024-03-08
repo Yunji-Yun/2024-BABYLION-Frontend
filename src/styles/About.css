@@ -67,18 +67,22 @@
     opacity: 1;
     transition: opacity 400ms ease-in-out;
     flex-wrap: wrap;
+    text-wrap: wrap;
+    overflow: hidden;
 }
 
 .front_intro {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: row;
     height: 130px;
     width: calc(100vw / 3);
     background-color: #ff7710;
     border-radius: 20px;
     opacity: 1;
     transition: opacity 400ms ease-in-out;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .back_intro {
@@ -91,6 +95,8 @@
     opacity: 1;
     transition: opacity 400ms ease-in-out;
     flex-wrap: wrap;
+    text-wrap: wrap;
+    overflow: hidden;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -155,7 +161,7 @@
     width: 361px;
     height: 92px;
     text-align: center;
-    /* display: none; */
+    /*display: none;*/
     opacity: 0;
     transition: opacity 0ms ease-in-out;
 }
@@ -192,7 +198,7 @@
 .des_intro:hover .des_text,
 .front_intro:hover .front_text,
 .back_intro:hover .back_text {
-    /* display: block; */
+    /*display: block;*/
     opacity: 1;
     transition: opacity 400ms ease-in-out;
 }
