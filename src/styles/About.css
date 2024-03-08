@@ -82,6 +82,7 @@
     opacity: 1;
     transition: opacity 400ms ease-in-out;
     flex-wrap: wrap;
+    text-wrap: wrap;
     overflow: hidden;
 }
 
@@ -240,4 +241,8 @@
 .back_intro:active .des_intro,
 .back_intro:active .front_intro {
     opacity: 0;
+}
+
+.front_intro:hover .front_title {
+    margin-left: 143px;
 }
