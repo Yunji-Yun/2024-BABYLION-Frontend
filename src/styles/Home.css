@@ -18,12 +18,6 @@
   overflow-x: hidden;
 }
 
-@media (hover: none) {
-  .page {
-    width: 100vw;
-  }
-}
-
 .page-bg {
   min-height: 100vh;
   /* min-height: 844px; */
