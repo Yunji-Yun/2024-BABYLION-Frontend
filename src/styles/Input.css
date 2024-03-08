@@ -1,222 +1,164 @@
-.page {
-    background: linear-gradient(#000000, rgb(34, 33, 30, 0.62));
-    width: 100vw;
-    height: 100vh;
-    /* min-height: 844px; */
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-.page-bg {
-    height: 100vh;
-    /* min-height: 844px; */
-    display: flex;
-    justify-content: center;
-}
-
-@media (hover: hover) {
-    .page-bg {
-        background-image: url("../img/background.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: repeat-y;
-    }
-}
-
-.page-space {
-    width: 100vw;
-    height: 100vh;
-    min-height: 844px;
-}
-
-@media (hover: hover) {
-    .page-space {
-        width: 390px;
-    }
-}
-.home-content {
-    display: flex;
-    flex-direction: column;
-    font-family: "GothicA1-Bold";
-    font-size: 1.4em;
-    font-weight: bolder;
-    letter-spacing: -0.08em;
-    margin-top: 65px;
-    width: 100%;
-}
-
-@media (hover: hover) {
-    .home-content {
-        width: 390px;
-    }
-}
-.center {
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
 .nameAndnextpage {
-    display: flex;
-    flex-direction: "row";
-    justify-content: space-between;
-    margin-top: 40px;
-    align-items: end;
-    width: 100%;
+  display: flex;
+  flex-direction: "row";
+  justify-content: space-between;
+  margin-top: 40px;
+  align-items: end;
+  width: 100%;
 }
 .emailline {
-    display: flex;
-    flex-direction: "row";
-    justify-content: space-between;
+  display: flex;
+  flex-direction: "row";
+  justify-content: space-between;
 
-    align-items: end;
-    width: 100%;
+  align-items: end;
+  width: 100%;
 }
 .phonenumberline {
-    display: flex;
-    flex-direction: "row";
-    justify-content: space-between;
+  display: flex;
+  flex-direction: "row";
+  justify-content: space-between;
 
-    align-items: end;
-    width: 100%;
+  align-items: end;
+  width: 100%;
 }
 .name {
-    width: calc(100vw / 3);
-    height: 30vw;
-    border-radius: 0px 20px 0px 0px;
-    background-color: #ff7710;
-    margin-top: 130px;
-    padding: 14px 14px 14px 12px;
-    color: #000000;
+  width: calc(100vw / 3);
+  height: 30vw;
+  border-radius: 0px 20px 0px 0px;
+  background-color: #ff7710;
+  margin-top: 130px;
+  padding: 14px 14px 14px 12px;
+  color: #000000;
 }
 input {
-    width: calc(100vw / 3);
-    border: none;
-    outline: none;
+  width: calc(100vw / 3);
+  border: none;
+  outline: none;
 }
 
 .nextpage {
-    width: calc(100vw / 3);
-    height: 60vw;
-    border-radius: 20px 0px 0px 20px;
-    background-color: #981b45;
-    color: white;
-    padding: 14px 12px 14px 14px;
-    cursor: pointer;
+  width: calc(100vw / 3);
+  height: 60vw;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #981b45;
+  color: white;
+  padding: 14px 12px 14px 14px;
+  cursor: pointer;
 }
 .phonenumber {
-    width: calc(100vw / 1.5);
-    height: calc(100vw / 3.5);
-    border-radius: 0px 20px 0px 0px;
-    background-color: white;
-    color: black;
-    padding: 12px 25px 13px 16px;
+  width: calc(100vw / 1.5);
+  height: calc(100vw / 3.5);
+  border-radius: 0px 20px 0px 0px;
+  background-color: white;
+  color: black;
+  padding: 12px 25px 13px 16px;
 }
 .email {
-    width: calc(100vw / 1.5);
-    height: calc(100vw / 3.5);
-    border-radius: 0px 0px 0px 20px;
-    background-color: black;
-    color: white;
-    margin-left: auto; /* 맨 오른쪽에 고정 */
-    padding: 13px 0px 11px 13px;
+  width: calc(100vw / 1.5);
+  height: calc(100vw / 3.5);
+  border-radius: 0px 0px 0px 20px;
+  background-color: black;
+  color: white;
+  margin-left: auto; /* 맨 오른쪽에 고정 */
+  padding: 13px 0px 11px 13px;
 }
 .inboxmargin {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .inboxmargintonextpage {
-    height: 210px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .nextpage {
-        width: 130px;
-        height: 260px;
-    }
-    .phonenumber {
-        width: 260px;
-        height: 129px;
-    }
-    .email {
-        width: 260px;
-        height: 130px;
-    }
-    .name {
-        width: 130px;
-        height: 130px;
-    }
-    .inputb {
-        width: 500px;
-    }
+  .nextpage {
+    width: 130px;
+    height: 260px;
+  }
+  .phonenumber {
+    width: 260px;
+    height: 129px;
+  }
+  .email {
+    width: 260px;
+    height: 130px;
+  }
+  .name {
+    width: 130px;
+    height: 130px;
+  }
+  .inputb {
+    width: 500px;
+  }
 }
 
 @media (max-width: 312px) {
-    .home-content {
-        font-size: 17px;
-    }
+  .home-content {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: 500px) {
-    .home-content {
-        font-size: 30px;
-    }
+  .home-content {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 768px) {
-    .home-content {
-        font-size: 50px;
-    }
-    .inputb {
-        width: 500px;
-    }
+  .home-content {
+    font-size: 50px;
+  }
+  .inputb {
+    width: 500px;
+  }
 
-    .CursorImg {
-        width: 35px;
-        height: 35px;
-    }
+  .CursorImg {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 @media (min-width: 820px) {
-    .home-content {
-        font-size: 50px;
-    }
-    .inputb {
-        width: 500px;
-    }
-    .CursorImg {
-        width: 40px;
-        height: 40px;
-    }
+  .home-content {
+    font-size: 50px;
+  }
+  .inputb {
+    width: 500px;
+  }
+  .CursorImg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .home-content {
-        font-size: 70px;
-    }
-    .inputb {
-        width: 500px;
-    }
-    .CursorImg {
-        width: 60px;
-        height: 60px;
-    }
+  .home-content {
+    font-size: 70px;
+  }
+  .inputb {
+    width: 500px;
+  }
+  .CursorImg {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (hover: hover) {
-    .home-content {
-        font-size: 1.4em;
-    }
-    .inputb {
-        width: 500px;
-    }
-    .CursorImg {
-        width: 18px;
-        height: 18px;
-    }
+  .home-content {
+    font-size: 1.4em;
+  }
+  .inputb {
+    width: 500px;
+  }
+  .CursorImg {
+    width: 18px;
+    height: 18px;
+  }
 }
