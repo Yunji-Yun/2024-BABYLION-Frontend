@@ -8,7 +8,10 @@
 .page {
   background: linear-gradient(#000000, rgb(34, 33, 30, 0.62));
   width: 100vw;
-  padding: 0 env(safe-area-inset);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
   /* height: 100vh; */
   min-height: 100vh;
   overflow-y: scroll;
