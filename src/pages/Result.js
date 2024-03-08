@@ -33,8 +33,8 @@ function PassComponent({ name }) {
         <div className="text-[#000000] mt-12 mb-5 text-base font-bold font-['Inter'] leading-tight">
           노션
           <br />
-          <a href="https://www.notion.so/ko-kr" target="_blank" rel="noopener noreferrer">
-            https://www.notion.so/ko-kr
+          <a href="https://jiinkyung.notion.site/12-89a8d4c50681479ea1fb70438471dd0d?pvs=74" target="_blank" rel="noopener noreferrer">
+            https://jiinkyung.notion.site/12-89a8d4c50681479ea1fb70438471dd0d?pvs=74
           </a>
         </div>
         <div className="text-[#000000] text-base font-bold font-['Inter'] leading-tight">
