@@ -3,10 +3,28 @@
     flex-direction: "row";
     justify-content: space-between;
     margin-top: 40px;
+    align-items: end;
+    width: 100%;
+}
+.emailline {
+    display: flex;
+    flex-direction: "row";
+    justify-content: space-between;
+
+    align-items: end;
+    width: 100%;
+}
+.phonenumberline {
+    display: flex;
+    flex-direction: "row";
+    justify-content: space-between;
+
+    align-items: end;
+    width: 100%;
 }
 .name {
-    width: 130px;
-    height: 130px;
+    width: calc(100vw / 3);
+    height: 30vw;
     border-radius: 0px 20px 0px 0px;
     background-color: #ff7710;
     margin-top: 130px;
@@ -14,14 +32,14 @@
     color: #000000;
 }
 input {
-    width: 130px;
+    width: calc(100vw / 3);
     border: none;
     outline: none;
 }
 
 .nextpage {
-    width: 130px;
-    height: 260px;
+    width: calc(100vw / 3);
+    height: 60vw;
     border-radius: 20px 0px 0px 20px;
     background-color: #981b45;
     color: white;
@@ -29,31 +47,119 @@ input {
     cursor: pointer;
 }
 .phonenumber {
-    width: 260px;
-    height: 129px;
+    width: calc(100vw / 1.5);
+    height: calc(100vw / 3.5);
     border-radius: 0px 20px 0px 0px;
     background-color: white;
     color: black;
     padding: 12px 25px 13px 16px;
 }
 .email {
-    width: 260px;
-    height: 130px;
+    width: calc(100vw / 1.5);
+    height: calc(100vw / 3.5);
     border-radius: 0px 0px 0px 20px;
     background-color: black;
     color: white;
-    margin-left: 130px;
+    margin-left: auto; /* 맨 오른쪽에 고정 */
     padding: 13px 0px 11px 13px;
 }
 .inboxmargin {
-    height: 100px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .inboxmargintonextpage {
-    height: 210px;
+    /* height: 210px; */
+    height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .nextpage {
+        width: 130px;
+        height: 260px;
+    }
+    .phonenumber {
+        width: 260px;
+        height: 129px;
+    }
+    .email {
+        width: 260px;
+        height: 130px;
+    }
+    .name {
+        width: 130px;
+        height: 130px;
+    }
+    .inputb {
+        width: 100%;
+    }
+}
+
+@media (max-width: 312px) {
+    .home-content {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 500px) {
+    .home-content {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-content {
+        font-size: 50px;
+    }
+    .inputb {
+        width: 100%;
+    }
+
+    .CursorImg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 820px) {
+    .home-content {
+        font-size: 50px;
+    }
+    .inputb {
+        width: 100%;
+    }
+    .CursorImg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-content {
+        font-size: 70px;
+    }
+    .inputb {
+        width: 100%;
+    }
+    .CursorImg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .home-content {
+        font-size: 1.4em;
+    }
+    .inputb {
+        width: 100%;
+    }
+    .CursorImg {
+        width: 18px;
+        height: 18px;
+    }
 }

@@ -70,7 +70,7 @@ function Input() {
                 <div className="name">
                   <div className="inboxmargin">
                     <div>이름</div>
-                    <div>
+                    <div className="inputb">
                       <input
                         type="text"
                         value={name}
@@ -79,7 +79,7 @@ function Input() {
                         }}
                         placeholder="김덕성"
                         style={{
-                          width: "104px",
+                          width: "100%",
                           border: "none",
                           backgroundColor: " transparent",
                         }}
@@ -105,43 +105,47 @@ function Input() {
                   </div>
                 </div>
               </div>
-              <div className="phonenumber">
-                <div className="inboxmargin">
-                  <div>휴대폰 번호</div>
-                  <div>
-                    <input
-                      type="text"
-                      value={number}
-                      placeholder="01012341234"
-                      style={{
-                        width: "219px",
-                        border: "none",
-                        backgroundColor: " transparent",
-                      }}
-                      onChange={(e) => {
-                        setNumber(e.target.value);
-                      }}
-                    ></input>
+              <div className="phonenumberline">
+                <div className="phonenumber">
+                  <div className="inboxmargin">
+                    <div>휴대폰 번호</div>
+                    <div className="inputb">
+                      <input
+                        type="text"
+                        value={number}
+                        placeholder="01012341234"
+                        style={{
+                          width: "100%",
+                          border: "none",
+                          backgroundColor: " transparent",
+                        }}
+                        onChange={(e) => {
+                          setNumber(e.target.value);
+                        }}
+                      ></input>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="email">
-                <div className="inboxmargin">
-                  <div>이메일</div>
-                  <div>
-                    <input
-                      type="text"
-                      value={email}
-                      placeholder="1234@gmail.com"
-                      style={{
-                        width: "196px",
-                        border: "none",
-                        backgroundColor: " transparent",
-                      }}
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                      }}
-                    ></input>
+              <div className="emailline">
+                <div className="email">
+                  <div className="inboxmargin">
+                    <div>이메일</div>
+                    <div className="inputb">
+                      <input
+                        type="text"
+                        value={email}
+                        placeholder="1234@gmail.com"
+                        style={{
+                          width: "100%",
+                          border: "none",
+                          backgroundColor: " transparent",
+                        }}
+                        onChange={(e) => {
+                          setEmail(e.target.value);
+                        }}
+                      ></input>
+                    </div>
                   </div>
                 </div>
               </div>

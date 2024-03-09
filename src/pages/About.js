@@ -72,7 +72,9 @@ function About() {
               </div>
             </div>
           </div>
-          <Footer />
+          <div className="About_Footer" style={{ marginTop: "-40px" }}>
+            <Footer />
+          </div>
         </div>
       </div>
     </div>

@@ -9,8 +9,12 @@
 .page {
     background: linear-gradient(#000000, rgb(34, 33, 30, 0.62));
     width: 100vw;
-    height: 100vh;
-    /* min-height: 844px; */
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    /* height: 100vh; */
+    min-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -22,13 +26,14 @@
 }
 
 .page-bg {
-    height: 100vh;
+    min-height: 100vh;
     /* min-height: 844px; */
     display: flex;
+    white-space: nowrap;
     justify-content: center;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     .page-bg {
         background-image: url("../img/background.png");
         background-size: cover;
@@ -39,11 +44,11 @@
 
 .page-space {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     min-height: 844px;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     .page-space {
         width: 390px;
     }
@@ -63,9 +68,10 @@
     font-weight: bolder;
     letter-spacing: -0.08em;
     margin-top: 65px;
+    width: 100vw;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     .home-content {
         width: 390px;
     }
@@ -194,7 +200,7 @@
     margin-bottom: 6px;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     .homeToAbout,
     .homeToInput,
     .grayBox,
@@ -273,7 +279,7 @@
     }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     .home-content {
         font-size: 1.4em;
     }
