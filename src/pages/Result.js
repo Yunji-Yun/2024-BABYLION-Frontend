@@ -24,9 +24,9 @@ function PassComponent({ name }) {
           알려드리게 되어 기쁘네요.
         </div>
         <div className="text-[#000000] text-base font-bold font-['Inter'] leading-tight">
-          아래 노션 및 디스코드 링크에
+          아래 구글폼 제출 후
           <br />
-          접속하셔서
+          디스코드 링크에 접속하셔서
           <br />
           최종 합격자로서의 기쁨을 누리세요!
         </div>
