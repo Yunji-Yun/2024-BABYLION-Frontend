@@ -98,19 +98,28 @@ function Result() {
   const [name, setName] = useState("");
 
   const location = useLocation();
+  const nameInfo = location.state.name;
   const passInfo = location.state.pass;
-  console.log(passInfo);
+  // console.log(passInfo);
+
+  localStorage.setItem("name", nameInfo);
+  localStorage.setItem("passInfo", passInfo);
+
   useEffect(() => {
     // 가상의 백엔드 요청 시뮬레이션
 
-    setName(location.state.name);
+    const savedName = localStorage.getItem("name");
+    const savedPassInfo = localStorage.getItem("passInfo");
+
+    setName(savedName);
+
     // pass가 "true"일 때 합격 페이지를 보여주고, 그 외에는 불합격 페이지를 보여줌
-    if (passInfo == true) {
+    if (savedPassInfo === "true") {
       setIsPassed(true);
-    } else if (passInfo == false) {
+    } else if (savedPassInfo === "false") {
       setIsPassed(false);
     }
-  }, [passInfo, location.state.name]);
+  }, [passInfo, name]);
 
   return (
     <div className="page">
