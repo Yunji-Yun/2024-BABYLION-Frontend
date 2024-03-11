@@ -66,8 +66,6 @@
     border-radius: 0px 20px 20px 0px;
     opacity: 1;
     transition: opacity 400ms ease-in-out;
-    flex-wrap: wrap;
-    text-wrap: wrap;
     overflow: hidden;
 }
 
@@ -82,7 +80,6 @@
     opacity: 1;
     transition: opacity 400ms ease-in-out;
     flex-wrap: wrap;
-    text-wrap: wrap;
     overflow: hidden;
 }
 
@@ -96,7 +93,6 @@
     opacity: 1;
     transition: opacity 400ms ease-in-out;
     flex-wrap: wrap;
-    text-wrap: wrap;
     overflow: hidden;
 }
 
@@ -122,7 +118,7 @@
 .front_title {
     font-weight: bold;
     font-size: 1.2em;
-    margin: 13px;
+    margin: 13px 13px 0 13px;
     display: flex;
     justify-content: center;
     opacity: 1;
@@ -246,5 +242,5 @@
 }
 
 .front_intro:hover .front_title {
-    margin-left: 143px;
+    margin-left: 140px;
 }
