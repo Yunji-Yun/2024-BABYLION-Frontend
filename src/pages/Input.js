@@ -43,7 +43,7 @@ function Input() {
     // 데이터베이스에서 정보 가져오기
 
     axios
-      .post("https://localhost:8443:8080/api/babylion/check", {
+      .post("https://localhost:8443/api/babylion/check", {
         name: name,
         phone: number,
         email: email,
